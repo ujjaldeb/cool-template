@@ -1,38 +1,364 @@
-.App {
-  text-align: center;
+/* Banner section CSS */
+.banner{
+	background: url('./images/banner.png') no-repeat center top;
+	background-size: cover;
+}
+.banner .navbar{
+	margin-top: 15px;
+}
+.banner .navbar-brand{
+	font-weight: 900;
+	color: #fff;
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+    color: #fff;
+}
+.banner .font-pink{
+	color: #ed145b;
+}
+.banner .navbar-nav .nav-link{
+	color: #fff !important;
+	font-size: 16px;
+	font-weight: 300;
+	transition: 0.5s;
+}
+.banner .navbar-nav .nav-link:hover{
+	color: #ed145b !important;
+}
+.banner .navbar-light .navbar-nav .active .nav-link{
+	color: #ed145b !important;
+}
+.banner h1{
+	color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 220px;
+    font-weight: 300;
+}
+.banner h1 span{
+	font-weight: 900;
+}
+.banner hr{
+	width: 18%;
+	margin: 30px auto;
+}
+.banner p{
+	color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 300;
+}
+.banner .btn {
+    display: block;
+    border-radius: 30px;
+    padding: 10px 50px;
+    background: #ed145b;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 48px auto 220px;
+}
+.banner .btn:hover{
+	background: #fff;
+	color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* About section CSS */
+.about{
+	background: #f4f4f4;
+}
+.about h2{
+	margin-top: 80px;
+}
+.about hr{
+    width: 30%;
+    margin-left: 0;
+}
+.about h6{
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #ed145b;
+	margin-bottom: 50px;
+}
+.about .fa{
+	font-size: 16px;
+    vertical-align: text-top;
+    margin-left: 5px;
+}
+.about .img-fluid{
+	position: relative;
+    top: 65px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Our Services section CSS */
+.our-services{
+	padding: 100px 0;
+}
+.our-services hr{
+	width: 18%;
+  margin: 1rem auto;
+}
+.our-services p{
+	margin-bottom: 50px;
+}
+.our-services h6{
+	margin: 15px 0;
+	font-size: 14px;
+	font-weight: 700;
+  text-transform: uppercase;
+  color: #ed145b;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Quotes section CSS */
+.quotes{
+	background: url('./images/banner.png') no-repeat;
+	background-size: cover;
+	padding: 120px 0;
+}
+.quotes span{
+    display: block;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 900;
+    color: #ed145b;
+    line-height: 0.5;
+}
+.quotes .fa-lft{
+	display: flex;
+	align-items: center;
+	font-size: 40px;
+	color: #8f8f8f;
+}
+.quotes .fa-angle-right{
+	margin-left: auto;
+}
+.quotes p{
+	font-size: 20px;
+	font-style: italic;
+	color: #fff;
+	margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+/* Prices section CSS */
+.prices{
+	padding: 100px 0;
+	background: #f4f4f4;
+}
+.prices hr{
+	width: 15%;
+  margin: 1rem auto;
+}
+.prices .text-center p{
+	margin-bottom: 50px;
+}
+.prices .price-plan{
+	width: 100%;
+	background: #5a5a5a;
+	transition: 0.5s;
+}
+.prices .price-plan p{
+	text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 50px 0;
+    font-weight: 700;
+}
+.prices .price-plan p span{
+	font-size: 50px;
+    line-height: 0;
+}
+.prices .plan-content{
+	background: #fff;
+	padding-bottom: 30px;
+}
+.prices .btn{
+	display: block;
+    margin: auto;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+}
+.prices .btn-top {
+    padding: 10px 50px;
+    position: relative;
+    top: -24px;
+    background: #f4f4f4;
+    color: #333;
+}
+.prices .btn-bottom {
+    padding: 10px 55px;
+    background: #ed145b;
+    color: #fff;
+    margin-top: 25px;
+    transition: 0.5s;
+}
+.prices ul{
+	font-weight: 300;
+	font-size: 14px;
+}
+.prices ul li{
+	margin-bottom: 10px;
+}
+.prices .plan-hover:hover .price-plan{
+	background: #ed145b;
+}
+.prices .plan-hover:hover .btn-bottom{
+	padding: 10px 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Additional Info section CSS */
+.additional-info{
+	padding: 100px 0 30px;
+}
+.additional-info .img-fluid{
+	display: block;
+	margin: auto;
+}
+.additional-info h6{
+	color: #ed145b;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 14px;
+}
+.additional-info .mrgn-bottom{
+	margin-bottom: 50px;
+}
+
+/* Join Us section CSS */
+.join-us{
+	padding: 50px 0;
+	background: #ed145b;
+}
+.join-us h1{
+	margin: 0;
+	color: #fff;
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 32px;
+	letter-spacing: 1px;
+}
+.join-us h1 span{
+	font-weight: 700;
+}
+.join-us .btn{
+	background: #fff;
+    color: #ed145b;
+    text-transform: uppercase;
+    border-radius: 30px;
+    padding: 8px 40px;
+    font-weight: 700;
+    font-size: 14px;
+    vertical-align: text-top;
+    transition: 0.5s;
+    display: block;
+    margin: auto;
+}
+.join-us .btn:hover{
+	padding: 8px 30px;
+}
+
+/* News section CSS */
+.news{
+	padding: 100px 0;
+}
+.news hr{
+	width: 18%;
+  margin: 1rem auto;
+}
+.news .text-center p{
+	margin-bottom: 50px;
+}
+.news .mrgn-bottom{
+	margin-bottom: 50px;
+}
+.news h6{
+	text-transform: uppercase;
+	font-size: 14px;
+}
+.news .card-content{
+	background: #f4f4f4;
+	padding: 20px;
+}
+.news .card-content p{
+	margin: 0;
+}
+.news .text-center h6{
+	color: #ed145b;
+	font-size: 14px;
+	font-weight: 700;
+}
+.news .fa{
+	font-size: 24px;
+	color: #ed145b;
+}
+
+/* More Additional Info section CSS */
+.more-additional-info{
+	background: url('./images/banner.png') no-repeat;
+	background-size: cover;
+	padding: 100px 0;
+}
+.more-additional-info h2,
+.more-additional-info p{
+	color: #fff;
+}
+.more-additional-info hr{
+	width: 18%;
+  margin: 1rem auto;
+}
+.more-additional-info .btn{
+	border-radius: 30px;
+    padding: 10px 50px;
+    background: #ed145b;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+.more-additional-info .btn:hover{
+	padding: 10px 40px;
+	background: #fff;
+	color: #ed145b;
+}
+
+/* Download section CSS */
+.download{
+	padding: 50px 0;
+	background: #f4f4f4;
+}
+.download hr{
+	width: 20%;
+    margin-left: 0;
+}
+.download .btn{
+	border-radius: 30px;
+    padding: 10px 25px;
+    background: #ed145b;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+.download .btn:hover{
+	padding: 10px 35px;
+}
+
+ /* Footer section CSS */
+ footer{
+	background: #000;
+	padding: 20px 0;
+}
+footer p{
+	text-transform: uppercase;
+	margin: 0;
+	color: #fff;
+	font-size: 12px;
 }
